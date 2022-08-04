@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Product preview card component</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+    * {
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-left: 0;
+      padding-right: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: 0;
+      margin-right: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: hsl(30, 38%, 92%);
+      font-size: 14px;
+      height: 100vh; /* add height to ensure product card is centered */
+    }
+
+    .product {
+      display: flex;
+      background-color: white;
+      height: 450px;
+      width: 56%;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .product-image {
+      width: 50%;
+    }
+
+    .product-image > img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .product-info {
+      width: 50%;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    .product-intro {
+      font-size: smaller;
+      letter-spacing: 0.5rem;
+      color: hsl(228, 12%, 48%);
+      text-transform: uppercase;
+    }
+
+    .product-title {
+      margin-top: 14px;
+      margin-bottom: 14px;
+      font-family: 'Fraunces', serif;
+      font-size: xx-large;
+      color: hsl(212, 21%, 14%);
+    }
+
+    .product-description {
+      color: hsl(228, 12%, 48%);
+    }
+
+    .product-price {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .product-price_bold {
+      color: hsl(158, 36%, 37%);
+      font-weight: 700;
+      font-family: 'Fraunces', serif;
+      font-size: xx-large;
+      margin-right: 16px;
+    }
+
+    .product-price_cancelled {
+      text-decoration: line-through;
+      color: hsl(228, 12%, 48%);
+    }
+
+    .product-button {
+      display: block;
+      color: white;
+      background-color: hsl(158, 36%, 37%);
+      padding-top: 14px;
+      padding-bottom: 14px;
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <!-- steps -->
+  <!-- download file from Frontend mentors -->
+  <!-- structure html -->
+  <!-- Add class attribute -->
+  <!-- add styles into style tag -->
+  <!-- read style guide and add the fonts -->
+  <!-- remove default styles -->
+  <!-- center the page contents -->
+  <!-- layout the card content side by side -->
+  <!-- Set size of container card and contents includin images resize -->
+  <!-- add border radius -->
+  <!-- spacing and formating text -->
+
+  <main>
+    <article class="product">
+      <figure class="product-image">
+        <img src="./images/image-product-desktop.jpg" alt="" srcset="">
+      </figure>
+  
+      <div class="product-info">
+        <p class="product-intro">Perfume</p>
+        <h1 class="product-title">Gabrielle Essence Eau De Parfum</h1>
+        <p class="product-description">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+          Perfumer-Creator for the House of CHANEL.</p>
+        <p class="product-price">
+          <span class="product-price_bold">$149.99</span>
+          <span class="product-price_cancelled">$169.99</span>
+        </p>
+        <button class="product-button"> Add to Cart</button>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
